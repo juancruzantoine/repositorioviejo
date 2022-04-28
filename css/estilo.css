@@ -51,8 +51,7 @@ body {
 }
 
 h1{
-    border: solid 1px black;
-    background-color: rgb(47,79,152);
+    background-image: linear-gradient(to right, rgb(47,79,152), rgb(148, 152, 161));
     text-align: center;
     font-family: robotoBold;
     font-size: 40px;
@@ -101,6 +100,13 @@ h1{
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+.principal__titulo:hover{
+    font-size: 45px;
+    background-color: rgb(47,79,152);
+    padding: 10px;
+    border-radius: 5px;
+    transition: 2s;
 }
 
 h3{
@@ -152,6 +158,12 @@ h3{
 .principal__fechas{
     grid-area: fechas;
     display: block;
+    transition:transform 2s;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+.principal__fechas:hover{
+    transform: scale(2);
 }
 
 .fechas{
@@ -275,7 +287,11 @@ h3{
     width: 500px;
     margin: 10px;
 }
-
+.fotoNosotros:hover{
+    height: 400px;
+    width: 600px;
+    transition: 2s;
+}
 /* PÁGINA CAMPEONATOS */
 
 .contenedorCampeonatos{
@@ -323,7 +339,7 @@ form{
     font-size: 20px;
     display: inline-block;
     margin-top: 10px;
-    margin-left: 30px;
+    margin-left: 320px;
     width: 700px;
     border: solid 3px rgb(47,79,152);
 }

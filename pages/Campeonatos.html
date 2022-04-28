@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>F.R.A.D.C</title>
         <link rel="shortcut icon" href="../images/Logo FRAD.jpg">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="../css/estilo.css">
     </head>
     <body>
@@ -40,8 +41,8 @@
         <div class="contenedorCampeonatos">
             <h2 class="principal__titulo">Campeonatos</h2>
             <div id="tablaKa">
-                <h3 class="h3Camp">Karting de asfalto</h3>
-                <table border="4" cellpadding="10" cellspacing="30" class="tabla">
+                <h3 class="h3Camp"  data-aos="zoom-in" data-aos-duration="2000">Karting de asfalto</h3>
+                <table border="4" cellpadding="10" cellspacing="30" class="tabla"  data-aos="zoom-in" data-aos-duration="2000">
                     <tr>
                         <th>POSICION</th>
                         <th>NOMBRE</th>
@@ -65,8 +66,8 @@
                 </table>
             </div>
             <div id="tablaKt">
-                <h3 class="h3Camp">Karting de tierra</h3>
-                <table border="4" cellpadding="10" cellspacing="30" class="tabla">
+                <h3 class="h3Camp" data-aos="zoom-out-down" data-aos-duration="2000">Karting de tierra</h3>
+                <table border="4" cellpadding="10" cellspacing="30" class="tabla" data-aos="zoom-out-down" data-aos-duration="2000">
                     <tr>
                         <th>POSICION</th>
                         <th>NOMBRE</th>
@@ -90,8 +91,8 @@
                 </table>
             </div>
             <div id="tablaAa">
-                <h3 class="h3Camp">Autos de asfalto</h3>
-                <table border="4" cellpadding="10" cellspacing="30" class="tabla">
+                <h3 class="h3Camp" data-aos="fade-right" data-aos-duration="2000">Autos de asfalto</h3>
+                <table border="4" cellpadding="10" cellspacing="30" class="tabla" data-aos="fade-right" data-aos-duration="2000">
                     <tr>
                         <th>POSICION</th>
                         <th>NOMBRE</th>
@@ -115,8 +116,8 @@
                 </table>
             </div>
             <div id="tablaAt">
-                <h3 class="h3Camp">Autos de tierra</h3>
-                <table border="4" cellpadding="10" cellspacing="30" class="tabla">
+                <h3 class="h3Camp" data-aos="fade-left" data-aos-duration="2000">Autos de tierra</h3>
+                <table border="4" cellpadding="10" cellspacing="30" class="tabla" data-aos="fade-left" data-aos-duration="2000">
                     <tr>
                         <th>POSICION</th>
                         <th>NOMBRE</th>
@@ -145,5 +146,9 @@
             <p>Teléfono: 0351-4718828</p>   
             <p>Mail: fedeautocor@hotmail.com</p>
         </footer>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>
