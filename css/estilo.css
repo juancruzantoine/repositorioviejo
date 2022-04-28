@@ -1,0 +1,550 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: roboto;
+    src: url(../Fonts/RobotoCondensed-Regular.ttf);
+}
+
+@font-face{
+    font-family: robotoLight ;
+    src: url(../Fonts/RobotoCondensed-Light.ttf);
+}
+
+@font-face{
+    font-family: robotoBold;
+    src: url(../Fonts/RobotoCondensed-Bold.ttf);
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+/* CONTENEDOR INDEX */
+
+.contenedorIndex{
+    display: grid;
+    grid-template-areas:"logo h1 h1"
+                        "redes barra barra"
+                        "foto foto foto"
+                        "titulo titulo titulo"
+                        "card1 card2 card3"
+                        ". fechas ."
+                        "futer futer futer"; 
+}
+
+/* ENCABEZADO */
+.logo{
+    border-radius: 100px;
+    display: inline-block;
+    height: 150px;
+    width: 150px;
+    grid-area: logo;
+
+}
+
+h1{
+    border: solid 1px black;
+    background-color: rgb(47,79,152);
+    text-align: center;
+    font-family: robotoBold;
+    font-size: 40px;
+    color: black;
+    padding: 20px;
+    grid-area: h1;
+}
+
+.redes{
+    grid-area: redes;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+.logo__facebook{
+    display: inline-block;
+}
+
+.logo__twitter{
+    display: inline-block;
+    border-radius: 100px;
+}
+
+.logo__instagram{
+    display: inline-block;
+    border-radius: 30px;
+}
+
+.fotoPrincipal{
+    grid-area: foto;
+}
+.fotoPrincipal img{
+    grid-area: foto;
+    border-radius: 15px;
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 20px;
+}
+
+.principal__titulo{
+    grid-area: titulo;
+    font-family: robotoBold;
+    font-size: 35px;
+    padding: 0px;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+h3{
+    font-family: robotoBold;
+    font-size: 25px;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    display: block;
+    text-align: center;
+}
+
+#card1{
+    grid-area: card1;
+}
+#card2{
+    grid-area: card2;
+}
+#card3{
+    grid-area: card3;
+}
+.cardsIndex{
+    background-color: #b5bbdb65;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px;
+    border: rgb(17, 47, 180) 3px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.textoCards{
+    font-family: robotoLight;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.imgCards{
+    margin-bottom: 20px;
+    margin-left: 90px;
+    border-radius: 15px;
+    width: 220px;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.principal__fechas{
+    grid-area: fechas;
+    display: block;
+}
+
+.fechas{
+    font-family: robotoLight;
+    font-size: 20px;
+    display: block;
+    text-align: center;
+    margin-bottom: 5%;
+    list-style: none;
+}
+
+.futer{
+    grid-area: futer;
+    font-family: robotoBold;
+    font-size: 16px;
+    text-align: center;
+    background-color: rgb(47,79,152);
+    margin-top: 2%;
+}
+
+/* BARRA DE NAVEGACIÓN */
+.barra{
+    margin-left: 38%;
+    font-family: roboto;
+    font-size: 16px;
+    padding: 5px;
+    background-color:rgb(47,79,152);
+    border: solid 1px black;
+    border-radius: 15px;
+    grid-area: barra;
+}
+
+.barra ul{
+    list-style: none;
+}
+.menu >li{
+    position: relative;
+    display: inline-block;
+}
+.menu >li >a{
+    display: block;
+    padding: 15px 20px;
+    color: black;
+    text-decoration: none;
+}
+.menu li a:hover{
+    background-color: lightblue;
+    border-radius: 15px;
+}
+.submenu{
+    margin-left: 23%;
+    position: absolute;
+    background-color:rgb(47,79,152);
+    width: 14%;
+    border-radius: 20px;
+}
+
+.submenu ul{
+    position:absolute;
+}
+
+.submenu li a{
+    display:none;
+    padding: 15px;
+    font-family: roboto;
+    text-decoration: none;
+    color: black;
+}
+
+.submenu ul li{
+    display: none;
+}
+.despl:hover > .submenu{
+    display: block;
+}
+
+.submenu ul li:hover{
+    display: block;
+} 
+
+/* PÁGINA NOSOTROS */
+
+.contenedorNosotros{
+    display: grid;
+    grid-template-areas:"titulo titulo titulo"
+                        "fotoComienzos comienzos comienzos"
+                        "act act fotoAct"
+                        "futer futer futer";
+}
+
+.textoNosotros{
+    font-family: robotoLight;
+    font-size: 18px;
+    text-align: justify;
+}
+.comienzos{
+    grid-area: comienzos;
+    background-color: rgba(177, 177, 177, 0.664);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.fotoComienzos{
+    grid-area: fotoComienzos;
+}
+
+.actualidad{
+    grid-area: act;
+    background-color: rgba(177, 177, 177, 0.664);
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px;
+}
+.fotoAct{
+    grid-area: fotoAct;
+}
+
+.fotoNosotros{
+    border-radius: 15px;
+    height: 350px;
+    width: 500px;
+    margin: 10px;
+}
+
+/* PÁGINA CAMPEONATOS */
+
+.contenedorCampeonatos{
+    width: 100%;
+    display: grid;
+    grid-template-areas:"titulo titulo titulo"
+                        "tablaKa . tablaKt"
+                        "tablaAa . tablaAt";
+    grid-template-columns: 45% 5% 45%;
+}
+
+#tablaKa{
+    grid-area: tablaKa;
+}
+#tablaKt{
+    grid-area: tablaKt;
+}
+#tablaAa{
+    grid-area: tablaAa;
+}
+#tablaAt{
+    grid-area: tablaAt;
+}
+
+.tabla{
+    font-family: roboto;
+    font-size: 20px;
+    padding: 20px;
+    border: solid 3px  rgb(47,79,152);
+    border-radius: 10px;
+    display: inline-block;
+    margin-left: 20%;
+}
+
+.tabla td{
+    text-align: center;
+    padding: 5px;
+}
+
+/* PÁGINA CONTACTO */
+
+form{
+    padding: 20px;
+    font-family: roboto;
+    font-size: 20px;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 30px;
+    width: 700px;
+    border: solid 3px rgb(47,79,152);
+}
+
+label{
+    display: block;
+    padding: 10px;
+}
+
+textarea{
+    display: block;
+    padding: 5%;
+    height: 200px;
+    width: 500px;
+    margin-top: 4%;
+}
+
+input{
+    display: inline;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    margin-left: 4%;
+}
+
+/*PÁGINA REGLAMENTOS*/
+
+.textoReglamentos{
+    font-family: robotoLight;
+    font-size: 18px;
+    text-align: justify;
+    margin-top: 20px;
+}
+
+/*Efecto Parallax*/
+
+.img-1{
+    background-image: url(../images/karting\ tierra.jpeg);
+    margin-top: 10%;
+}
+
+.img-2{
+    background-image: url(../images/KART.jpg);
+    margin-top: 3%;
+}
+
+.img-3{
+    background-image: url(../images/RALLY.jpg);
+    margin-top: 3%;
+}
+
+.img-4{
+    background-image: url(../images/autos\ pista.jpg);
+    margin-top: 3%;
+}
+
+.parallax{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50rem;
+    max-width: 100%;
+    position: relative;
+}
+
+.titulo h3{
+    font-family: robotoBold;
+    font-size: 25px;
+    background-color: lightblue;
+    padding: 20px;
+    border-radius: 15px;
+    display: inline;
+    text-align: center;
+}
+
+/* MEDIA QUERIES 320PX */
+
+@media (max-width: 320px){
+
+    /* INDEX*/
+
+    .contenedorIndex{
+        display: grid;
+        grid-template-areas:"logo"
+                            "h1"
+                            "redes"
+                            "barra"
+                            "foto"
+                            "titulo"
+                            "card1"
+                            "card2"
+                            "card3"
+                            "fechas"
+                            "futer";
+    }
+
+
+    .logo{
+        height: 120px;
+        width: 120px;
+        margin-left: 22%;
+    }
+    
+    h1{
+        font-size: 20px;
+    }
+
+    .logo__facebook{
+        height: 35px;
+        width: 35px;
+    }
+    
+    .logo__twitter{
+        height: 35px;
+        width: 35px;
+    }
+    
+    .logo__instagram{
+        height: 32px;
+        width: 32px;
+    }
+    
+    .barra{
+        font-size: 5px;
+        margin: 0px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        padding: 0px;
+    }
+
+    .fotoPrincipal img{
+        grid-area: foto;
+        border-radius: 15px;
+        width: 80%;
+        margin-left: 10%;
+    }
+    
+    .principal__titulo{
+        font-size: 18px;
+        padding: 0px;
+        margin-top: 3%;
+    }
+    
+    h3{
+        font-size: 16px;
+    }
+    
+    .cardsIndex{
+        padding: 20px;
+        margin: 10px;
+    }
+    
+    .textoCards{
+        font-size: 12px;
+    }
+    
+    .imgCards{
+        margin-bottom: 20px;
+        margin-left: 20px;
+        border-radius: 15px;
+        width: 220px;
+        height: 150px;
+    }
+    
+    .fechas{
+        font-size: 12px;
+    }
+    
+    .futer{
+        font-size: 10px;
+    }
+
+
+    /* PÁGINA NOSOTROS */
+
+    .contenedorNosotros{
+        grid-template-areas:"titulo"
+                        "fotoComienzos"
+                        "comienzos"
+                        "fotoAct"
+                        "act"
+                        "futer";
+    }
+
+    .textoNosotros{
+        font-size: 14px;
+    }
+
+    .fotoNosotros{
+        height: 180px;
+        width: 300px;
+    }
+
+
+    /* PÁGINA CAMPEONATOS */
+
+    .contenedorCampeonatos{
+        grid-template-areas:"titulo"
+                            "tablaKa"
+                            "tablaKt"
+                            "tablaAa"
+                            "tablaAt";
+    }
+
+    .tabla{
+        font-size: 14px;
+        padding: 5px;
+        margin-left: 10%;
+        margin: 10px;
+        display: inline-block;
+        text-align: center;
+    }
+
+    .tabla td{
+        text-align: center;
+        padding: 5px;
+    }
+
+    .h3Camp{
+        display: inline-block;
+        text-align: center;
+    }
+
+}
