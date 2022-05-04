@@ -6,35 +6,44 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>F.R.A.D.C</title>
         <link rel="shortcut icon" href="../images/Logo FRAD.jpg">
-        <link rel="stylesheet" href="../css/estilo.css">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/nuevo.css">
     </head>
     <body>
         <header>
             <img src="../images/Logo FRAD.jpg" alt="logo fradc" title="Logo fradc" class="logo">
             <h1>Federación Regional de Automovilismo de la Provincia de Córdoba</h1>
-            <a href="https://es-la.facebook.com/people/Frad-Cba/100063611434058/" target="blank">
-            <img src="../images/logo facebook.png" alt="logo facebook" title="Logo facebook" height="40px" width="40px" class="logo__facebook">
-            </a>
-            <a href="https://twitter.com/FRADCBA?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="blank">
-            <img src="../images/logo twitter.png" alt="logo twitter" title="Logo twitter" height="40px" width="40px" class="logo__twitter">
-            </a>
-            <a href="https://www.instagram.com/frad.cba/?hl=es" target="blank">
-            <img src="../images/logo instagram.png" alt="logo instagram" title="Logo instagram" height="35px" width="35px" class="logo__instagram">
-            </a>
-            <nav class="barra">
-                <ul class="menu">
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="Nosotros.html">Nosotros</a></li>
-                    <li><a href="Campeonatos.html">Campeonatos</a></li>
-                    <li><a href="Reglamentos.html">Reglamentos</a></li>
-                        <ul class="submenu">
-                            <li><a href="Reglamentos.html#kt"> Karting sobre tierra</a></li>
-                            <li><a href="Reglamentos.html#ka"> Karting sobre asfalto</a></li>
-                            <li><a href="Reglamentos.html#at"> Autos sobre tierra</a></li>
-                            <li><a href="Reglamentos.html#aa"> Autos sobre asfalto</a></li>
-                        </ul>
-                    <li><a href="Contacto.html">Contacto</a></li>
-                </ul>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="redes">    
+                    <a href="https://es-la.facebook.com/people/Frad-Cba/100063611434058/" target="blank">
+                    <img src="../images/logo facebook.png" alt="logo facebook" title="Logo facebook" height="40px" width="40px" class="logo__facebook">
+                    </a>
+                    <a href="https://twitter.com/FRADCBA?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="blank">
+                    <img src="../images/logo twitter.png" alt="logo twitter" title="Logo twitter" height="40px" width="40px" class="logo__twitter">
+                    </a>
+                    <a href="https://www.instagram.com/frad.cba/?hl=es" target="blank">
+                    <img src="../images/logo instagram.png" alt="logo instagram" title="Logo instagram" height="35px" width="35px" class="logo__instagram">
+                    </a>
+                </div>
+                <div class="container-fluid barra">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                        <a class="navbar-brand margin" href="../index.html">Inicio</a>
+                        <a class="navbar-brand margin" href="Nosotros.html">Nosotros</a>
+                        <a class="navbar-brand margin" href="Campeonatos.html">Campeonatos</a>       
+                        <li class="nav-item dropdown noitem margin"> <a class="nav-link dropdown-toggle navbar-brand" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false" href="Reglamentos.html">Reglamentos</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="Reglamentos.html#kt">Karting sobre tierra</a></li>
+                                <li><a class="dropdown-item" href="Reglamentos.html#ka">Karting sobre asfalto</a></li>
+                                <li><a class="dropdown-item" href="Reglamentos.html#at">Autos sobre tierra</a></li>
+                                <li><a class="dropdown-item" href="Reglamentos.html#aa">Autos sobre asfalto</a></li>
+                            </ul>
+                        </li>
+                        <a class="navbar-brand margin" href="Contacto.html">Contacto</a>
+                    </div>
+                </div>
             </nav>
         </header>
         <section>
@@ -113,5 +122,10 @@
             <p>Teléfono: 0351-4718828</p>
             <p>Mail: fedeautocor@hotmail.com</p>
         </footer>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <script src="../js/bootstrap.bundle.min.js"></script>
     </body>
 </html>

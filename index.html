@@ -7,7 +7,8 @@
         <title>F.R.A.D.C</title>
         <link rel="shortcut icon" href="images/Logo FRAD.jpg">
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <link rel="stylesheet" href="css/estilo.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/nuevo.css">
     </head>
     <body>
         <div class="contenedorIndex">
@@ -17,31 +18,37 @@
                 </a>
             </div>
             <h1>Federación Regional de Automovilismo de la Provincia de Córdoba</h1>
-            <div class="redes">    
-                <a href="https://es-la.facebook.com/people/Frad-Cba/100063611434058/" target="blank">
-                <img src="images/logo facebook.png" alt="logo facebook" title="Logo facebook" height="40px" width="40px" class="logo__facebook">
-                </a>
-                <a href="https://twitter.com/FRADCBA?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="blank">
-                <img src="images/logo twitter.png" alt="logo twitter" title="Logo twitter" height="40px" width="40px" class="logo__twitter">
-                </a>
-                <a href="https://www.instagram.com/frad.cba/?hl=es" target="blank">
-                <img src="images/logo instagram.png" alt="logo instagram" title="Logo instagram" height="35px" width="35px" class="logo__instagram">
-                </a>
-            </div>
-            <nav class="barra">
-                <ul class="menu">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="pages/Nosotros.html">Nosotros</a></li>
-                    <li><a href="pages/Campeonatos.html">Campeonatos</a></li>
-                    <li><a href="pages/Reglamentos.html" class="despl">Reglamentos</a></li>
-                        <ul class="submenu">
-                            <li><a href="pages/Reglamentos.html#kt"> Karting sobre tierra</a></li>
-                            <li><a href="pages/Reglamentos.html#ka"> Karting sobre asfalto</a></li>
-                            <li><a href="pages/Reglamentos.html#at"> Autos sobre tierra</a></li>
-                            <li><a href="pages/Reglamentos.html#aa"> Autos sobre asfalto</a></li>
-                        </ul>
-                    <li><a href="pages/Contacto.html">Contacto</a></li>
-                </ul>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="redes">    
+                    <a href="https://es-la.facebook.com/people/Frad-Cba/100063611434058/" target="blank">
+                    <img src="images/logo facebook.png" alt="logo facebook" title="Logo facebook" height="40px" width="40px" class="logo__facebook">
+                    </a>
+                    <a href="https://twitter.com/FRADCBA?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="blank">
+                    <img src="images/logo twitter.png" alt="logo twitter" title="Logo twitter" height="40px" width="40px" class="logo__twitter">
+                    </a>
+                    <a href="https://www.instagram.com/frad.cba/?hl=es" target="blank">
+                    <img src="images/logo instagram.png" alt="logo instagram" title="Logo instagram" height="35px" width="35px" class="logo__instagram">
+                    </a>
+                </div>
+                <div class="container-fluid barra">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                        <a class="navbar-brand margin" href="index.html">Inicio</a>
+                        <a class="navbar-brand margin" href="pages/Nosotros.html">Nosotros</a>
+                        <a class="navbar-brand margin" href="pages/Campeonatos.html">Campeonatos</a>       
+                        <li class="nav-item dropdown noitem margin"> <a class="nav-link dropdown-toggle navbar-brand" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false" href="pages/Reglamentos.html">Reglamentos</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="pages/Reglamentos.html#kt">Karting sobre tierra</a></li>
+                                <li><a class="dropdown-item" href="pages/Reglamentos.html#ka">Karting sobre asfalto</a></li>
+                                <li><a class="dropdown-item" href="pages/Reglamentos.html#at">Autos sobre tierra</a></li>
+                                <li><a class="dropdown-item" href="pages/Reglamentos.html#aa">Autos sobre asfalto</a></li>
+                            </ul>
+                        </li>
+                        <a class="navbar-brand margin" href="pages/Contacto.html">Contacto</a>
+                    </div>
+                </div>
             </nav>
             <article class="fotoPrincipal">
                 <img src="images/Midget.jpg" alt="Autos en pista" title="Autos en pista">
@@ -49,17 +56,33 @@
             <div class="principal__titulo">
                 <h2>Noticias</h2>
             </div>
-            <div id="card1" class="cardsIndex" data-aos="flip-left">
-                <img src="images/capicor.jpg" alt="Capicor" title="Capicor" class="imgCards">
-                <p class="textoCards">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est sed, dignissimos, blanditiis recusandae asperiores optio quod itaque maiores hic molestiae soluta iste totam a omnis laudantium velit officiis placeat culpa? Non totam sequi ipsam aliquam quam architecto. Quidem excepturi aut, voluptatum rem enim mollitia maiores doloremque beatae, quod vero amet blanditiis consequuntur tempora veniam repudiandae accusamus natus commodi? Eaque, aut? Blanditiis ullam commodi, est aperiam nam autem, magni a quidem nulla culpa odio, quia similique natus harum! Reiciendis labore maiores, tempora soluta voluptates explicabo consectetur, necessitatibus itaque, cupiditate maxime in?</p>
-            </div>
-            <div id="card2" class="cardsIndex" data-aos="flip-left">
-                <img src="images/auto1.jpg" alt="Capicor" title="Capicor" class="imgCards">
-                <p class="textoCards">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est sed, dignissimos, blanditiis recusandae asperiores optio quod itaque maiores hic molestiae soluta iste totam a omnis laudantium velit officiis placeat culpa? Non totam sequi ipsam aliquam quam architecto. Quidem excepturi aut, voluptatum rem enim mollitia maiores doloremque beatae, quod vero amet blanditiis consequuntur tempora veniam repudiandae accusamus natus commodi? Eaque, aut? Blanditiis ullam commodi, est aperiam nam autem, magni a quidem nulla culpa odio, quia similique natus harum! Reiciendis labore maiores, tempora soluta voluptates explicabo consectetur, necessitatibus itaque, cupiditate maxime in?</p>
-            </div>
-            <div id="card3" class="cardsIndex" data-aos="flip-left">
-                <img src="images/karting1.jpg" alt="Capicor" title="Capicor" class="imgCards">
-                <p class="textoCards">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est sed, dignissimos, blanditiis recusandae asperiores optio quod itaque maiores hic molestiae soluta iste totam a omnis laudantium velit officiis placeat culpa? Non totam sequi ipsam aliquam quam architecto. Quidem excepturi aut, voluptatum rem enim mollitia maiores doloremque beatae, quod vero amet blanditiis consequuntur tempora veniam repudiandae accusamus natus commodi? Eaque, aut? Blanditiis ullam commodi, est aperiam nam autem, magni a quidem nulla culpa odio, quia similique natus harum! Reiciendis labore maiores, tempora soluta voluptates explicabo consectetur, necessitatibus itaque, cupiditate maxime in?</p>
+            <div class="container-fluid row">
+                <div class="card col-sm-12 col-lg-4 cardsIndex espacio" style="width: 35rem;">
+                    <img src="images/capicor.jpg" alt="Capicor" title="Capicor" class="imgCards" data-aos="flip-left">
+                    <div class="card-body">
+                        <p class="textoCards">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae earum eaque ea, animi itaque eveniet incidunt recusandae tempora accusantium odit vel provident, similique officiis suscipit. Tempore veritatis totam facilis ipsum.
+                            Maxime neque velit sapiente inventore in optio unde, expedita facilis itaque cumque dolor beatae commodi voluptatum ipsum iste iure officia, rerum est aliquid aspernatur. Non assumenda laudantium voluptates at perspiciatis?</p>
+                        <a href="" target="blank" class="btn btn-outline-secondary boton">Ver nota completa</a>
+                    </div>
+                </div>
+                <div class="card col-sm-12 col-lg-4 cardsIndex" style="width: 35rem;">
+                    <img src="images/auto1.jpg" alt="Capicor" title="Capicor" class="imgCards" data-aos="flip-left">
+                    <div class="card-body">
+                        <p class="textoCards">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae earum eaque ea, animi itaque eveniet incidunt recusandae tempora accusantium odit vel provident, similique officiis suscipit. Tempore veritatis totam facilis ipsum.
+                        Maxime neque velit sapiente inventore in optio unde, expedita facilis itaque cumque dolor beatae commodi voluptatum ipsum iste iure officia, rerum est aliquid aspernatur. Non assumenda laudantium voluptates at perspiciatis?</p>
+                        <a href="" target="blank" class="btn btn-outline-secondary boton">Ver nota completa</a>
+                    </div>
+                </div>
+                <div class="card col-sm-12 col-lg-4 cardsIndex" style="width: 35rem;">
+                    <img src="images/karting1.jpg" alt="Capicor" title="Capicor" class="imgCards" data-aos="flip-left">
+                        <p class="textoCards">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae earum eaque ea, animi itaque eveniet incidunt recusandae tempora accusantium odit vel provident, similique officiis suscipit. Tempore veritatis totam facilis ipsum.
+                            Maxime neque velit sapiente inventore in optio unde, expedita facilis itaque cumque dolor beatae commodi voluptatum ipsum iste iure officia, rerum est aliquid aspernatur. Non assumenda laudantium voluptates at perspiciatis?</p>
+                        <a href="" target="blank" class="btn btn-outline-secondary boton">Ver nota completa</a>
+                    </div>
+                </div>
+                    </div>
+                </div>
+                
             </div>
         <article class="principal__fechas">
             <h3>Próximas fechas</h3>
@@ -80,5 +103,6 @@
         <script>
             AOS.init();
         </script>
+        <script src="js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
