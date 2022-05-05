@@ -36,8 +36,6 @@ body {
     display: inline-block;
     height: 150px;
     width: 150px;
-    grid-area: logo;
-
 }
 
 h1{
@@ -388,4 +386,75 @@ input{
     border-radius: 15px;
     display: inline;
     text-align: center;
+}
+
+/* MEDIA QUERIES 320PX */
+
+@media (max-width: 320px){
+
+    /* INDEX*/
+    .logo{
+        margin-left: 30%;
+        height: 80px;
+        width: 80px;
+    }
+    
+    h1{
+        font-size: 16px;
+    }
+    
+    h3{
+        font-size: 16px;
+    }
+    
+    .cardsIndex{
+        margin: 5%;
+    }
+    
+    .textoCards{
+        font-size: 13px;
+    }
+    
+    .imgCards{
+        margin-bottom: 20px;
+        margin-left: 5px;
+    }
+    
+    .fechas{
+        font-size: 10px;
+        margin-bottom: 50px;
+    }
+    
+    .futer{
+        font-size: 10px;
+    }
+
+    /* PÁGINA CAMPEONATOS */
+
+    .contenedorCampeonatos{
+        grid-template-areas:"titulo"
+                            "tablaKa"
+                            "tablaKt"
+                            "tablaAa"
+                            "tablaAt";
+    }
+
+    .tabla{
+        font-size: 14px;
+        margin-left: 40%;
+    }
+
+    .tabla td{
+        text-align: center;
+        padding: 5px;
+        margin-left: 30%;
+    }
+
+    .h3Camp{
+        margin-left: 15%;
+    }
+    .principal__titulo{
+        font-size: 18px;
+        margin-top: 3%;
+    }
 }
