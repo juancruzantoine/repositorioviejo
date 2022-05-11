@@ -1,0 +1,120 @@
+
+html{
+    font-size: 62.5%;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+/* ENCABEZADO */
+.logo{
+    border-radius: 100px;
+    display: inline-block;
+    height: 150px;
+    width: 150px;
+    grid-area: logo;
+}
+
+h1{
+    background-image: linear-gradient(to right, $colorPrincipal, rgb(148, 152, 161));
+    text-align: center;
+    font-family: robotoBold;
+    font-size: 40px;
+    color: $colorSecundario;
+    padding: 20px;
+    grid-area: h1;
+}
+
+.redes{
+    grid-area: redes;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+.logo__facebook{
+    display: inline-block;
+}
+
+.logo__twitter{
+    display: inline-block;
+    border-radius: 100px;
+}
+
+.logo__instagram{
+    display: inline-block;
+    border-radius: 30px;
+}
+
+/* BARRA DE NAVEGACION */
+
+.barra{
+    margin-left: 38%;
+    font-family: roboto;
+    padding: 15px;
+    background-color:$colorPrincipal;
+    border: solid 1px $colorSecundario;
+    border-radius: 15px;
+    width: 100%;
+
+    ul{
+        background-color: $colorPrincipal;
+    }
+
+    a{
+        font-size: 16px;
+        color: $colorSecundario;
+        
+        &:hover{
+            background-image: linear-gradient(to right, $colorPrincipal, rgb(148, 152, 161));
+            border-radius: 5px;
+        }
+    }
+}
+
+.margin{
+    margin-left: 7%;
+}
+
+.noitem{
+    text-decoration: none;
+    list-style: none;
+}
+
+
+.principal__titulo{
+    grid-area: titulo;
+    font-family: robotoBold;
+    font-size: 35px;
+    padding: 0px;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    &:hover{
+        font-size: 45px;
+        background-color: $colorPrincipal;
+        padding: 10px;
+        border-radius: 5px;
+        transition: 2s;
+    }
+}
+
+h3{
+    font-family: robotoBold;
+    font-size: 25px;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    display: block;
+    text-align: center;
+}
+
+.futer{
+    grid-area: futer;
+    font-family: robotoBold;
+    font-size: 16px;
+    text-align: center;
+    background-color: $colorPrincipal;
+    margin-top: 2%;
+}

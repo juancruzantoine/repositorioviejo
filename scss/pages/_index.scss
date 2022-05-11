@@ -1,0 +1,69 @@
+.fotoPrincipal{
+    grid-area: foto;
+
+    img{
+    grid-area: foto;
+    border-radius: 15px;
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 20px;
+    }
+}
+
+/* CARDS INDEX */
+.cardsIndex{
+    background-color: #b5bbdb65;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px;
+    margin-left: 2%;
+    border: $colorPrincipal 3px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.textoCards{
+    font-family: robotoLight;
+    font-size: 16px;
+    text-align: justify;
+}
+.espacio{
+    margin-left: 7%;
+}
+
+.imgCards{
+    margin-bottom: 20px;
+    margin-left: 15%;
+    border-radius: 15px;
+    width: 220px;
+    height: 150px;
+}
+.boton{
+    display: block;
+    box-shadow: 5px;
+    background-image: linear-gradient(to right, $colorPrincipal, rgb(148, 152, 161));
+    color: $colorSecundario;
+    font-size: 14px;
+    font-family: roboto;
+}
+
+.fechas{
+    font-family: robotoLight;
+    font-size: 20px;
+    display: block;
+    text-align: center;
+    margin-bottom: 5%;
+    list-style: none;
+}
+
+.principal__fechas{
+    grid-area: fechas;
+    display: block;
+    transition:transform 2s;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    
+    &:hover{
+        transform: scale(2);
+    }
+}
