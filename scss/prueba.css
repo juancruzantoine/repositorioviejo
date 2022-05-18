@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@font-face {
+  font-family: roboto;
+  src: url(../Fonts/RobotoCondensed-Regular.ttf);
+}
+
+@font-face {
+  font-family: robotoLight;
+  src: url(../Fonts/RobotoCondensed-Light.ttf);
+}
+
+@font-face {
+  font-family: robotoBold;
+  src: url(../Fonts/RobotoCondensed-Bold.ttf);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+/* ENCABEZADO */
+.logo {
+  border-radius: 100px;
+  display: inline-block;
+  height: 150px;
+  width: 150px;
+  grid-area: logo;
+}
+
+h1 {
+  background-image: -webkit-gradient(linear, left top, right top, from(#2f4f98), to(#9498a1));
+  background-image: linear-gradient(to right, #2f4f98, #9498a1);
+  text-align: center;
+  font-family: robotoBold;
+  font-size: 40px;
+  color: black;
+  padding: 20px;
+  grid-area: h1;
+}
+
+.redes {
+  grid-area: redes;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.logo__facebook {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+}
+
+.logo__twitter {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  border-radius: 100px;
+}
+
+.logo__instagram {
+  display: inline-block;
+  border-radius: 30px;
+  height: 35px;
+  width: 35px;
+}
+
+/* BARRA DE NAVEGACION */
+.barra {
+  margin-left: 38%;
+  font-family: roboto;
+  padding: 15px;
+  background-color: #2f4f98;
+  border: solid 1px black;
+  border-radius: 15px;
+  width: 100%;
+}
+
+.barra ul {
+  background-color: #2f4f98;
+}
+
+.barra a {
+  font-size: 16px;
+  color: black;
+}
+
+.barra a:hover {
+  background-image: -webkit-gradient(linear, left top, right top, from(#2f4f98), to(#9498a1));
+  background-image: linear-gradient(to right, #2f4f98, #9498a1);
+  border-radius: 5px;
+}
+
+.margin {
+  margin-left: 7%;
+}
+
+.noitem {
+  text-decoration: none;
+  list-style: none;
+}
+
+.principal__titulo {
+  grid-area: titulo;
+  font-family: robotoBold;
+  font-size: 35px;
+  padding: 0px;
+  margin-top: 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.principal__titulo:hover {
+  font-size: 45px;
+  background-color: #2f4f98;
+  padding: 10px;
+  border-radius: 5px;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+h3 {
+  font-family: robotoBold;
+  font-size: 25px;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  display: block;
+  text-align: center;
+}
+
+.futer {
+  grid-area: futer;
+  font-family: robotoBold;
+  font-size: 16px;
+  text-align: center;
+  background-color: #2f4f98;
+  margin-top: 2%;
+}
+
+.fotoPrincipal {
+  grid-area: foto;
+}
+
+.fotoPrincipal img {
+  grid-area: foto;
+  border-radius: 15px;
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 20px;
+}
+
+/* CARDS INDEX */
+.cardsIndex {
+  background-color: #b5bbdb65;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 10px;
+  margin-left: 2%;
+  border: #2f4f98 3px solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.textoCards {
+  font-family: robotoLight;
+  font-size: 16px;
+  text-align: justify;
+}
+
+.espacio {
+  margin-left: 7%;
+}
+
+.imgCards {
+  margin-bottom: 20px;
+  margin-left: 15%;
+  border-radius: 15px;
+  width: 220px;
+  height: 150px;
+}
+
+.boton {
+  display: block;
+  -webkit-box-shadow: 5px;
+          box-shadow: 5px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#2f4f98), to(#9498a1));
+  background-image: linear-gradient(to right, #2f4f98, #9498a1);
+  color: black;
+  font-size: 14px;
+  font-family: roboto;
+}
+
+.fechas {
+  font-family: robotoLight;
+  font-size: 20px;
+  display: block;
+  text-align: center;
+  margin-bottom: 5%;
+  list-style: none;
+}
+
+.principal__fechas {
+  grid-area: fechas;
+  display: block;
+  -webkit-transition: -webkit-transform 2s;
+  transition: -webkit-transform 2s;
+  transition: transform 2s;
+  transition: transform 2s, -webkit-transform 2s;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.principal__fechas:hover {
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+/*# sourceMappingURL=prueba.css.map */

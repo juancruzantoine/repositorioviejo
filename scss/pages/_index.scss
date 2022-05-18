@@ -1,9 +1,18 @@
+/* MIXIN */
+@mixin sizetexto ($tamaño, $color) {
+    font-size: $tamaño;
+    color: $color;
+}
+
+/* MAP GET */
+$estilos: (borde: 15px, center: center);
+
 .fotoPrincipal{
     grid-area: foto;
 
     img{
     grid-area: foto;
-    border-radius: 15px;
+    border-radius: map-get($estilos, borde);
     width: 60%;
     margin-left: 20%;
     margin-top: 20px;
@@ -13,18 +22,18 @@
 /* CARDS INDEX */
 .cardsIndex{
     background-color: #b5bbdb65;
-    border-radius: 15px;
+    border-radius: map-get($estilos, borde);
     padding: 20px;
     margin: 10px;
     margin-left: 2%;
     border: $colorPrincipal 3px solid;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: map-get($estilos, center);
 }
 .textoCards{
+    @include sizetexto (16px,$colorSecundario);
     font-family: robotoLight;
-    font-size: 16px;
     text-align: justify;
 }
 .espacio{
@@ -34,7 +43,7 @@
 .imgCards{
     margin-bottom: 20px;
     margin-left: 15%;
-    border-radius: 15px;
+    border-radius: map-get($estilos, borde);
     width: 220px;
     height: 150px;
 }
@@ -49,9 +58,9 @@
 
 .fechas{
     font-family: robotoLight;
-    font-size: 20px;
+    @include sizetexto (20px,$colorSecundario);
     display: block;
-    text-align: center;
+    text-align: map-get($estilos, center);
     margin-bottom: 5%;
     list-style: none;
 }

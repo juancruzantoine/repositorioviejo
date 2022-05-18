@@ -32,18 +32,24 @@ h1{
     flex-direction: row;
     justify-content: start;
 }
+
 .logo__facebook{
     display: inline-block;
+    height:40px;
+    width:40px;
 }
 
+/* EXTEND */
 .logo__twitter{
-    display: inline-block;
+    @extend .logo__facebook;
     border-radius: 100px;
 }
 
 .logo__instagram{
     display: inline-block;
     border-radius: 30px;
+    height:35px;
+    width:35px;
 }
 
 /* BARRA DE NAVEGACION */
